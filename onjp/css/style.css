@@ -1,0 +1,71 @@
+
+html, body{height: 100%;}
+
+
+
+.bloco{min-height: 100%; padding-top: 94px}
+.btn{
+    /*definimos a largura do box*/
+    width:250px;
+    /* definimos a altura do box */
+    height:100px;
+    /* definimos a cor de fundo do box */
+    /* definimos o quão arredondado irá ficar nosso box */
+    border-radius: 10px 20px 30px;
+    }
+
+   .home{ animation:mudarbg 20s infinite; background-image: url('../img/executivo.jpg');
+background-repeat: no-repeat; background-size: cover;}
+/*Trasinção de "slides" animação home/
+/*Deixar as antigas*/
+@keyframes mudarbg{
+	40%{background-image: url("../img/executivo.jpg");}
+	80%{background-image: url("../img/fundo1.jpg");}
+	100%{background-image: url("../img/executivo.jpg");}
+}/*Trasinção retorna para o inicio*/
+
+
+nav {
+  color: #fff;
+  background-color: #ee6e73;
+  width: 100%;
+  height: 94px;
+  line-height: 56px;
+}
+/*Altera o nav  wrapper em index.html*/
+
+nav.nav-extended .nav-wrapper {
+  min-height: 94px;
+  height: auto;
+}
+/*configurações menu fixo */ 
+
+.navbar-fixed {
+  position: absolute;
+  height: 94px;
+  z-index: 997;
+}
+/*Customiza o ícone do menu */
+nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons {
+  display: block;
+  font-size: 24px;
+  height: 94px ;
+  line-height: 94px;
+/*Personalização da classe do menu móvel e colocando imagem*/
+.side-nav{background: url('../img/textura.png');}
+.side-nav li>a {color: #fff; font-weight: 100;}/*Personalização da classe do menu móvel*/
+
+
+/*A classe banner que envolve todod o conteúdo inicial da página*/
+/*Primeiro personaliz a tag h2*/
+.banner h2{font-size: 2.5rem; font-weight: 900;
+text-transform:uppercase;}
+/*Personaliza a tag p*/
+.banner p{font-size: 1.2rem; line-height:1.8rem;}
+*{
+	margin: 0;
+	padding: 0;
+}
+
